@@ -1,6 +1,7 @@
 package com.tutorial.reflection;
 
 import java.util.List;
+import java.util.Map;
 
 public class SomeClass
 {
@@ -11,6 +12,7 @@ public class SomeClass
 	private SomeClass2 someObj;
 	
 	private List<String> ll;
+	private Map<String, List<String>> someMap;
 
 	public SomeClass(String str2)
 	{
@@ -60,5 +62,15 @@ public class SomeClass
 	public void setLl(List<String> ll)
 	{
 		this.ll = ll;
+	}
+
+	public Map<String, List<String>> getSomeMap()
+	{
+		return someMap;
+	}
+
+	public void setSomeMap(Map<String, List<String>> someMap)
+	{
+		this.someMap = someMap;
 	}
 }
